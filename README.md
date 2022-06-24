@@ -1,6 +1,6 @@
 # mercadoLiebre
 
-![Uploading logo-mercado-liebre.svg…]()
+![image text](https://github.com/Richona/mercadoLiebre/blob/master/public/images/logo-mercado-liebre.svg)
 
 ## Proyecto de micro desafios planteados por Fundacion Formar y Digital House, auspiciado por Pampa Energia.
 
