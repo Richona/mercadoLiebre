@@ -1,0 +1,32 @@
+header{
+    background-color: var(--Amarillo);
+}
+.header__div{
+    padding: 20px 30px 10px;
+}
+.header__div img{
+    width: 150px;
+}
+.header__nav{
+    padding-left: 20px;
+}
+.header__nav i{
+    display: block;
+    padding-top: 2px;
+}
+.header__section{
+    padding: 20px 50px 20px;
+}
+.header__lista{
+    padding-bottom: 20px;
+}
+.header__burger-menu {
+    text-align: center;
+    margin: auto 0;
+    padding-bottom: 20px;
+}
+.header__burger-menu i{
+    background-color: var(--Celeste);
+    color: white;
+    padding: 10px;
+}
