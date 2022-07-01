@@ -1,0 +1,19 @@
+footer{
+    
+}
+.footer__section{
+    
+    text-align: center;
+    margin: 35px 25px 35px;
+}
+.footer__section__icono{
+    margin-bottom: 10px;
+    color: var(--Celeste);
+}
+.footer__section__icono i{
+    width: 2em;
+
+}
+.footer__section-copy{
+    padding: 0 10px 20px;
+}
