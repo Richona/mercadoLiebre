@@ -1,6 +1,9 @@
 header{
     background-color: var(--Amarillo);
 }
+.header__container-logo-barra{
+
+}
 .header__div{
     padding: 20px 30px 10px;
 }
@@ -14,12 +17,16 @@ header{
     display: block;
     padding-top: 2px;
 }
-.header__section{
-    padding: 20px 50px 20px;
+.copy-header{
+    margin: 0 5px 0 0;
+    padding: 20px 0;
     text-align: center;
 }
 .header__lista{
-    padding-bottom: 20px;
+    display: none;
+}
+.header__lista__primary{
+    margin-bottom: 20px;
 }
 .header__burger-menu {
     text-align: center;
@@ -27,7 +34,66 @@ header{
     padding-bottom: 20px;
 }
 .header__burger-menu i{
-    background-color: var(--Celeste);
+    background-color: var(--Azul);
     color: white;
     padding: 10px;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px){
+    .header__container-logo-barra{
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+        align-items: center;
+    }
+    .copy-header{
+        max-width: 250px;
+        text-align: right;
+        padding: 20px;
+    }
+    .header__lista{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    .header__lista ul{
+        display: flex;
+    }
+    .header__lista li{
+        margin: 0 5px;
+    }
+    .header__burger-menu{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .header__container-logo-barra, .header__lista{
+        max-width: 1024px;
+        margin: auto;
+    }
+    .header__div img{
+        width: 250px;
+    }
+    .header__container-logo-barra{
+        align-items: center;
+    }
+    .copy-header{
+        margin-right: 30px;
+        padding: 23px 0;
+        max-width: none;
+    }
+    .header__lista{
+        margin-top: 40px;
+    }
+    .header__lista__secundary{
+        margin-right: 20px;
+    }
+    .header__lista li{
+        margin: 0 10px;
+    }
+    .header__lista a{
+        font-size: 19px;
+    }
 }
