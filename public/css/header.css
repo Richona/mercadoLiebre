@@ -1,26 +1,47 @@
 header{
     background-color: var(--Amarillo);
 }
-.header__container-logo-barra{
-
+.header__container-logo-barra article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .header__div{
-    padding: 20px 30px 10px;
+    padding: 20px 0px 0px 10px;
 }
 .header__div img{
-    width: 150px;
+    flex-grow: 0.20;
+    width: 110px;
 }
+
 .header__nav{
-    padding-left: 20px;
+    flex-grow: 0.75;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    
+    width: 200px;
+    margin: 10px 10px 0 0;
 }
 .header__nav i{
-    display: block;
-    padding-top: 2px;
+    position: absolute;
+    padding: 4px;
+    background-color: white;
+    border-left: var(--GrisClaro) 1px solid;
 }
+.header__nav input{
+    position: relative;
+    width: 80%;
+    height: 40px;
+
+    border: white;
+}
+
 .copy-header{
     margin: 0 5px 0 0;
     padding: 20px 0;
     text-align: center;
+    font-size: 12px;
 }
 .header__lista{
     display: none;
@@ -46,16 +67,23 @@ header{
         justify-content: space-between;
         text-align: right;
         align-items: center;
+
+        margin: 0 15px;
+    }
+    .header__nav input{
+        width: 100%;
+        height: 40px;
     }
     .copy-header{
         max-width: 250px;
         text-align: right;
-        padding: 20px;
+        padding: 14px 8px 0 0;
+        font-size: 16px;
     }
     .header__lista{
         display: flex;
         justify-content: space-between;
-        margin: 0 20px;
+        margin: 20px;
     }
     .header__lista ul{
         display: flex;
@@ -74,15 +102,17 @@ header{
         margin: auto;
     }
     .header__div img{
-        width: 250px;
+        width: 200px;
     }
     .header__container-logo-barra{
         align-items: center;
     }
     .copy-header{
-        margin-right: 30px;
+        margin-right: 20px;
         padding: 23px 0;
-        max-width: none;
+        width: 600px;
+        font-size: 13px;
+        text-align: left;
     }
     .header__lista{
         margin-top: 40px;
