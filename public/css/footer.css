@@ -17,3 +17,13 @@ footer{
 .footer__section-copy{
     padding: 0 10px 20px;
 }
+
+/* MEDIA || TABLET 768px */
+@media (min-width: 768px){
+
+}
+
+/* MEDIA || DESKTOP 1024px */
+@media (min-width: 1024px){
+    
+}
