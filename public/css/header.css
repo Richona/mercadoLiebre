@@ -1,5 +1,9 @@
 header{
     background-color: var(--Amarillo);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 .header__container-logo-barra article{
     width: 100%;
@@ -12,6 +16,16 @@ header{
 .header__div img{
     flex-grow: 0.20;
     width: 110px;
+
+    animation: aumentar 1s ease-in infinite alternate;
+}
+@keyframes aumentar{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
 }
 
 .header__nav{
