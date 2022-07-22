@@ -29,6 +29,9 @@
                 Compra en cuotas y sin tarjeta de crédito
             </div>
         </section>
+        <div class="header__burger-menu" onclick="document.querySelector('.header__lista').classList.toggle('show')">
+            <i class="fas fa-bars"></i>
+        </div>
         <nav class="header__lista">
             <ul class="header__lista__primary">
                 <li><a href="">Ofertas</a></li>
@@ -42,9 +45,6 @@
                 <li><a href="">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
-        <div class="header__burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
     <!-- FORMULARIO -->
     <form action="/crear-producto" method="post" class="create-form">

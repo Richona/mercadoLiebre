@@ -59,6 +59,8 @@ header{
 }
 .header__lista{
     display: none;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .header__lista__primary{
     margin-bottom: 20px;
@@ -73,6 +75,9 @@ header{
     color: white;
     padding: 10px;
     border-radius: 8px;
+}
+.show{
+    display: block;
 }
 
 @media (min-width: 768px){
@@ -97,7 +102,8 @@ header{
     .header__lista{
         display: flex;
         justify-content: space-between;
-        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
     .header__lista ul{
         display: flex;
