@@ -14,5 +14,9 @@
 
     border: none;
     border-radius: 7px;
-}
 
+    transition: all 450ms;
+}
+.form_buttons_login button:hover{
+    background-color: #0022AA;
+}
