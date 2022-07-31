@@ -56,29 +56,25 @@
         <section class="register_section">
             <!-- NOM Y APE -->
             <div class="form_box">
-                <input type="text" class="form_box_cajas" placeholder="Nombre y apellido">
-                <small class="form_box_mensaje-error">Ingrese su nombre</small>
+                <input type="text" class="form_box_cajas" minlength="3" maxlength="40" placeholder="Nombre y apellido" required />
             </div>
             <!-- USUARIO -->
             <div class="form_box">
-                <input type="text" class="form_box_cajas" placeholder="Nombre de usuario">
-                <small class="form_box_mensaje-error">Ingrese su usuario</small>
+                <input type="text" class="form_box_cajas" minlength="3" maxlength="40" placeholder="Nombre de usuario" required>
             </div>
             <!-- EMAIL -->
             <div class="form_box">
-                <input type="email" class="form_box_cajas" placeholder="E-mail">
-                <small class="form_box_mensaje-error">Ingrese su E-mail</small>
+                <input type="email" class="form_box_cajas" minlength="3" maxlength="40" placeholder="E-mail" required>
             </div>
             <!-- FECHA -->
             <div class="form_box">
                 <label for="fecha" class="form_box_titulo">Fecha de nacimiento</label>
-                <input type="date" class="form_box_cajas" id="fecha">
-                <small class="form_box_mensaje-error">Ingrese su Fecha</small>
+                <input type="date" class="form_box_cajas" min="1900" id="fecha" required>
+    
             </div>
             <!-- DOM -->
             <div class="form_box">
                 <input type="text" class="form_box_cajas" placeholder="Domicilio">
-                <small class="form_box_mensaje-error">Ingrese su Domicilio</small>
             </div>
             <!-- PERFIL -->
             <div class="form_box">
@@ -89,7 +85,6 @@
                         <input type="radio" id="vende" name="uno">
                         <label for="vende">Vendedor</label>  
                 </article>
-                <small class="form_box_mensaje-error">Seleccione una opcion</small>
             </div>
             <!-- INTERESES -->
             <div class="form_box">
@@ -115,22 +110,20 @@
             <!-- FOTO -->
             <div class="form_box">
                 <label for="foto" class="form_box_titulo">Foto tuya</label>
-                <input type="file" class="form_box_cajas">
+                <input type="file" class="form_box_cajas" accept=".jpg">
             </div>
             <!-- CLAVES -->
             <div class="form_box">
                 <label for="contra" class="form_box_titulo">Contraseña</label>
-                <input type="password" class="form_box_cajas" id="contra">
-                <small class="form_box_mensaje-error">Ingrese su Contraseña</small>
+                <input type="password" class="form_box_cajas" minlength="3" maxlength="40" id="contra" required>
             </div>
             <div class="form_box">
                 <label for="contra2" class="form_box_titulo">Confirmar contraseña</label>
-                <input type="password" class="form_box_cajas" id="contra2">
-                <small class="form_box_mensaje-error">Las contraseñas no coindicen</small>
+                <input type="password" class="form_box_cajas" minlength="3" maxlength="40" id="contra2" required>
             </div>
             <!-- BOTONES -->
             <div class="form_buttons">
-                <a href="/"><button type="submit">Enviar</button></a>
+                <button type="submit">Enviar</button>
                 <button type="reset" class="form_buttons__cancelar">Cancelar</button>
             </div>
         </section>
